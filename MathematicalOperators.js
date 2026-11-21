@@ -7,7 +7,8 @@
 //Function to caluculate the total cost using the formula : totalCost = (price * quantity) * (1 + taxRate).
 function calculateTotalCost(price, quantity, taxRate) {
 
-    if(!isInputValid(price)||(!isInputValid(quantity))||(!isInputValid(taxRate))){
+    // Check if all inputs are valid numbers
+    if(!isInputValid(price)||!isInputValid(quantity)||!isInputValid(taxRate)){
         //console.log("Invalid input.")
         return "Invalid input."
     }
@@ -21,13 +22,14 @@ function calculateTotalCost(price, quantity, taxRate) {
 //Function to check if the inputNumber is valid 
 function isInputValid(inputNumber) {
 
-    if (typeof inputNumber !== "number" || !Number.isFinite(inputNumber)) {
+    if (typeof (inputNumber) !== "number" || !Number.isFinite(inputNumber)) {
         return false;
     }
 
     return true;
 }
 
+//Invoke / call the function calculateTotalCost
 console.log(calculateTotalCost(150, 4, 0.25))
 console.log(calculateTotalCost("test", 4, 0.75))
 console.log(calculateTotalCost("100","xyz", 0.15))
