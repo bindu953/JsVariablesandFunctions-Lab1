@@ -15,7 +15,7 @@ function calculateTotalCost(price, quantity, taxRate) {
     //Calculate total cost and assign to totalCost variable
     let totalCost = (price * quantity) * (1 + taxRate)
     //console.log(`TotalCost of items , including tax : $ ${totalCost} `)
-    return totalCost
+    return `TotalCost of items , including tax : $ ${totalCost}`
 }
 
 //Function to check if the inputNumber is valid 
@@ -28,8 +28,8 @@ function isInputValid(inputNumber) {
     return true;
 }
 
-console.log(`TotalCost of items , including tax : $ ${calculateTotalCost(150, 4, 0.25)}`)
-console.log(`TotalCost of items , including tax : $ ${calculateTotalCost("test", 4, 0.75)}`)
-console.log(`TotalCost of items , including tax : $ ${calculateTotalCost("100","xyz", 0.15)} `)
-console.log(`TotalCost of items , including tax : $ ${calculateTotalCost("100","4","taxrate")} `)
-console.log(`TotalCost of items , including tax : $ ${calculateTotalCost(100, 6, 0.85)} `)
+console.log(calculateTotalCost(150, 4, 0.25))
+console.log(calculateTotalCost("test", 4, 0.75))
+console.log(calculateTotalCost("100","xyz", 0.15))
+console.log(calculateTotalCost("100","4","taxrate"))
+console.log(calculateTotalCost(100, 6, 0.85))
