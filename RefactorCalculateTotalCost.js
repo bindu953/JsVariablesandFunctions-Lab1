@@ -25,7 +25,7 @@ function calculateTotalCost(price, quantity, taxRate, discount = 0) {
     // Calculate total cost including tax
     let totalCost = discountedTotal * (1 + taxRate);
 
-    return  `TotalCost of items , including tax : $ ${totalCost}`;
+    return `TotalCost of items , including tax : $ ${totalCost}`;
 }
 
 // Test without discount
@@ -41,7 +41,7 @@ console.log(calculateTotalCost("abc", 4, 0.25, 50));
 console.log(calculateTotalCost(100, 4, 0.50, 0));
 
 //Tests with invalid inputs
-console.log(calculateTotalCost("test", 4, 0.75,10))
-console.log(calculateTotalCost("100","xyz", 0.15,20))
-console.log(calculateTotalCost("100","4","taxrate",0))
+console.log(calculateTotalCost("test", 4, 0.75, 10))
+console.log(calculateTotalCost("100", "xyz", 0.15, 20))
+console.log(calculateTotalCost("100", "4", "taxrate", 0))
 

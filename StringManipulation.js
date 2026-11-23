@@ -18,7 +18,7 @@ function formatFullName(firstName, lastName) {
     let fullName = `Printing Full Name in the format lastName, firstName : ${capitalizeFirstLetter(lastName)}, ${capitalizeFirstLetter(firstName)}.`
     //console.log(fullName)
     return fullName
-    
+
 }
 
 //Function to change the case of the firstName and lastName so that the first letter 
