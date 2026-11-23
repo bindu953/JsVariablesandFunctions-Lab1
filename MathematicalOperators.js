@@ -28,10 +28,15 @@ function isInputValid(inputNumber) {
 
     return true;
 }
-
+// Run test cases only when this file is executed directly
+if (require.main === module) {
 //Invoke / call the function calculateTotalCost
 console.log(calculateTotalCost(150, 4, 0.25))
 console.log(calculateTotalCost("test", 4, 0.75))
 console.log(calculateTotalCost("100","xyz", 0.15))
 console.log(calculateTotalCost("100","4","taxrate"))
 console.log(calculateTotalCost(100, 6, 0.85))
+}
+
+// Export the function isNumbersValid
+module.exports = { isInputValid };
